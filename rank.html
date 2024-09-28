@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+    <style>
+
+    </style>
+</head>
+
+<body style="margin:0%;  background-color:#F5F5F5;">
+
+    <header class="header">
+        <img src="./assets/img/techpathshala.svg" alt="">
+
+        <div class="child-header">
+          
+
+            <a id="username"></a>
+            <img src="./assets/img/logo.png" alt="" height="40px" onclick="toggleLoggOut()">
+
+            <div class="logout hidden">
+                <p id="logoutname"></p>
+                <p id="logoutemail"></p>
+                <button onclick="logout()" style="margin-right: 77px;">Logout</button>
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="rank">
+
+        <h2>WoW You Rank <span id="positionheader"></span></h2>  
+        <p>Supporting Text</p>
+
+    </div>
+
+    <section class="rank-section">
+
+        <div class="rank1">
+            <h2><i>#</i>2</h2>
+            <img src="./assets/img/rank2.svg" alt="" height="140px">
+            <h3>Score</h3>
+            <P id="position2"></P>
+
+        </div>
+
+        <div class="rank2">
+
+            <h2><i>#</i id="first">1</h2>
+            <img src="./assets/img/rank1.svg" alt="" height="130px">
+            <h3>Score</h3>
+            <P id="position1"></P>
+
+        </div>
+
+        <div class="rank3">
+
+            <h2><i>#</i>3</h2>
+            <img src="./assets/img/rank3.svg" alt="" height="130px">
+            <h3>Score</h3>
+            <P id="position3"></P>
+
+        </div>
+
+    </section>
+
+    <section class="rank-lowest-position">
+
+        <div class="four">
+            <b><i>#</i>4</b>
+            <p id="rankname4"></p>
+            <h4 id="position4"></h4>
+
+
+        </div>
+
+        <div class="fifth">
+
+            <b><i>#</i>5</b>
+            <p id="rankname5"></p>
+            <h4 id="position5"></h4>
+
+
+        </div>
+
+        <div class="sixth">
+
+            <b id="rankNumber"><i></i ></b>
+            <p id="rankname6"></p>
+            <h4 id="position6"></h4>
+
+
+        </div>
+
+    </section>
+
+
+    <script src="js/quiz.js" >
+        
+    </script>
+    <script>
+        submit();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+    <script src="./js/quiz.js"></script>
+</head>
+
+<body>
+    <section id="signup">
+        <div class="signup-img">
+            <img src="./assets/img/signup.svg" alt="" height="550px" >
+        </div>
+
+  
+            <form action="" class="login-form" onsubmit="return false">
+                <h2>Signup</h2>
+                <p>Sign Up to Join. </p><br>
+                <label>Full Name</label><br>
+                <input type="text" placeholder="Full Name" id="name"><br>
+                <b>Email ID</b><br>
+                <input type="text" placeholder="xyz12@gmail.com" id="email"><br>
+                <strong>Password</strong><br>
+                <input type="password" placeholder="Password" id="password"><br>
+                <!-- <img src="./assets/img/passwordhide.png" alt="" height="40px" id="passwordshowSign"
+                onclick="passwordToggle()"> -->
+                <button onclick="handleSignup()">Login</button>
+                <img src="./assets/img/passwordhide.png" alt="" height="40px" id="passwordshowSign"
+                onclick="passwordToggle()">
+                <div class="googlelogo">
+                    <img src="./assets/img/googlelogo.png" alt="" height="20px">
+                    <span>Sign up with Google</span>
+                </div>
+
+               
+                <input type="checkbox" class="checkbox" >
+                <p class="checkbox-data">I accept <span>Terms & Conditions</span></p>
+                
+                <div class="signup-end">
+                <b id="signup-end">Have an account?<a href="./login.html">Log in ?</a></b>
+                </div>
+                
+
+            </form>
+      
+
+        
+    </section>
+</body>
+
+</html>

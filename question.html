@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+
+</head>
+
+<body style="margin:0%;  background-color:#F5F5F5;">
+    <header class="header">
+        <img src="./assets/img/techpathshala.svg" alt="">
+        <div class="child-header">
+            <a id="username"></a>
+            <img src="./assets/img/logo.png" alt="" height="40px" id="img" onclick="toggleLoggOut()">
+
+
+        </div>
+        <div class="logout hidden">
+            <p id="logoutname"></p>
+            <p id="logoutemail"></p>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <div class="question-section">
+        <h2>Question <span id="headernumber"></span> of 10</h2>
+        <p id="question-design"></p>
+        <p id="question-design2"></p>
+
+        <h3 id="question-number"></h3>
+        <h3 id="question"></h3>
+        <h4></h4>
+
+        <ol id="option">
+            <li>
+                <input type="radio" id="option1" name="selectOption" onclick="selectedOption(0)">
+                <label for="option1" id="lable1" name="selectOption"></label>
+            </li>
+            <li>
+                <input type="radio" id="option2" name="selectOption" onclick="selectedOption(1)">
+                <label for="option2" id="lable2" name="selectOption"></label>
+            </li>
+            <li>
+                <input type="radio" id="option3" name="selectOption" onclick="selectedOption(2)">
+                <label for="option3" id="lable3" name="selectOption"></label>
+            </li>
+
+            <li>
+                <input type="radio" id="option4" name="selectOption" onclick="selectedOption(3)">
+                <label for="option4" id="lable4" name="selectOption"></label>
+            </li>
+        </ol>
+
+
+    </div>
+    <div class="butons">
+
+        <a id="previous" onclick="previous()"></a>
+        <a href="rank.html" id="sumbit" onclick="score();"></a>
+        <a id="continue" onclick="next() "></a>
+
+    </div>
+
+    <script src="js/quiz.js"></script>
+
+    <script>
+        questionDisplay(currentQuestionIndex);
+
+    </script>
+</body>
+
+</html>

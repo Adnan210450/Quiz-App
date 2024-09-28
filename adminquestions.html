@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/quiz.css">
+</head>
+<body style="margin: 0%;background-color:#ECE6E6">
+    
+    <header class="header">
+        <img src="./assets/img/techpathshala.svg" alt="">
+
+        <div class="child-header">
+
+            <a> <i class="fa-solid fa-bars" id="menubar-icon" onclick="adminToggle()"></i></a>
+            <a id="username">Adnan Shaikh</a>
+            <img src="./assets/img/logo.png" alt="" height="40px" onclick="toggleLoggOut()">
+            <div class="logout hidden">
+                <p class="logoutname">Adnan Shaikh</p>
+                <p class="logoutemail">admin@gmail.com</p>
+                <button onclick="logout()" style="margin-right: 77px;">Logout</button>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="adminpage" style="display: none;">
+
+        <p>MENU</p>
+        <ol class="admindasboard  ">
+            <div class="home">
+                <i class="fa-solid fa-house"></i>
+                <li>Home</li>
+            </div>
+            <div class="User">
+                <i class="fa-solid fa-user"></i>
+                <li>Users</li>
+            </div>
+            <div class="Quiz">
+                <i class="fa-solid fa-question"></i>
+                <li>Quizes</li>
+            </div>
+
+        </ol>
+
+    </div>
+
+    <button class="addbutton" onclick="addQuestionsToggle()">Add </button>
+   
+    
+    <table id="admintablequestions">
+        <tr>
+            <th>Sr.No</th>
+            <th>Question</th>
+            <th>Option A</th>
+            <th>Option B</th>
+            <th>Option C</th>
+            <th>Option D</th>
+            <th>Correct Answer</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <!-- ADD QUESTION DYNAMICALLY -->
+    <div class="questionsadd" style="display: none;">
+        <i class="fa-regular fa-circle-xmark " id="closeicon" onclick="closeToggle()"></i>
+        <input type="text" id="addquestion" placeholder="Enter a question..">
+        <input type="text" id="optiona" placeholder="OPTION A">
+        <input type="text" id="optionb" placeholder="OPTION B">
+        <input type="text" id="optionc" placeholder="OPTION C">
+        <input type="text" id="optiond" placeholder="OPTION D">
+        <input type="text" id="CorrectAnswer" placeholder="Correct Answer">
+        <BUtton id="confirmbutton" onclick="addQuestions()">Confirm</BUtton>
+    </div>
+
+    <!-- EDIT QUESTION  -->
+    <div id="questionsedit" class="questionsadd" style="display: none;">
+        <i class="fa-regular fa-circle-xmark " id="closeicon" onclick="closeToggle()"></i>
+        <input type="text" class="editquestion" id="addquestion">
+        <input type="text" class="editoptiona" id="optiona">
+        <input type="text" class="editoptionb" id="optionb">
+        <input type="text" class="editoptionc" id="optionc">
+        <input type="text" class="editoptiond" id="optiond" >
+        <BUtton id="confirmbutton" >Confirm</BUtton>
+    </div>
+
+    <!-- <table id="userquestions">
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+
+    </table> -->
+    <script src="./js/quiz.js"></script>
+    <script>
+        adminQuestions();
+    </script>
+</body>
+</html>

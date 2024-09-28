@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+</head>
+<body style="margin:0%;  background-color:#F5F5F5;" >
+    <header class="header">
+        <img src="./assets/img/techpathshala.svg" alt="">
+
+        <div class="child-header">
+           <a id="username"></a>
+            <img src="./assets/img/logo.png" alt="" height="40px" id="img" onclick="toggleLoggOut()">
+         </div>
+
+        <h2>Let's Start the Quiz</h2>
+        <p><img src="./assets/img/timer.svg" alt="" height="12px" width="12px"> 10 min</p>
+        <ul>
+            <li>Disciaimers</li>
+            <li id=>Disciaimers</li>
+        </ul>
+        <div class="logout hidden" style="position: relative;top:-160px; left:-20px">
+            <p id="logoutname"></p>
+            <p id="logoutemail"></p>
+            <button onclick="logout()">Logout</button>
+        </div>
+     </header>
+
+     <section class="section-start-quiz">
+
+        <div class="section-design">
+
+            <div class="design1">
+                <p id="child-design1"></p>
+                <p id="child-design2"></p>
+                <p id="child-design3"></p>
+
+            </div>
+
+            <div class="design2">
+
+                <p id="design1"></p>
+                <p id="design2"></p>
+                <p id="design3"></p>
+
+            </div>
+
+            <div class="design3">
+
+                
+                <p id="design1"></p>
+                <p id="design2"></p>
+                <p id="design3"></p>
+
+            </div>
+
+
+        </div>
+        <div class="data">
+            <h2>Catchy Line of Starting Quiz</h2>
+            <p>When you are done,review your answerand See</p>
+            <h6>your rank</h6>
+
+        <form  class="start-quiz-form">
+        <button type="button" onclick="startQuiz()">Start Quiz</button>
+    </form>
+        
+
+        </div>
+
+    </section>
+
+    <script src="js/quiz.js">
+        
+function startQuiz(){
+    alert("do you want to start quiz??")
+    window.location.href="question.html";
+}
+
+        
+    
+    </script>
+</body>
+</html>
